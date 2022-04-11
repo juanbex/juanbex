@@ -17,11 +17,16 @@ def fibonacci():
         a, b = b, a + b
 
 def run():
-    num = int(input("Ingrese un numero: "))
-    print(divisors(num))
-    print("Terminó el programa.")
+    try:
+        num = int(input("Ingrese un numero: "))
+        print(divisors(num))
+        print("Terminó el programa.")
 
-    print(palindrome(1))
+        #print(palindrome('ana'))
+        #fibonacci()
+    except ValueError: 
+        print('Debes ingresar un numero')
+
 
 if __name__ == '__main__':
     run()
